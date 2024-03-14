@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    País de origem: <input type="text" name="ori" id="ori">
+    <input type="button" value="enviar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var ori = window.document.querySelector('input#ori')
+            var res = window.document.querySelector('div#res')
+            var origem = (ori.value)
+            
+            var pais = 'EUA' 
+            res.innerHTML = `vivendo em ${origem} voce é: `
+            if (pais == 'Brasil') {
+                res.innerHTML += `Brasileiro!`
+            } else {
+                res.innerHTML += `estrangeiro!`
+            }
+            
+            
+        }
+    </script>
+</body>
+</html>
