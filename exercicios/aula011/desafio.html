@@ -16,14 +16,15 @@
         function calcular() {
             var ori = window.document.querySelector('input#ori')
             var res = window.document.querySelector('div#res')
-            var origem = (ori.value)
+            var origem = ori.value
             
             var pais = 'EUA' 
-            res.innerHTML = `vivendo em ${origem} voce é: `
-            if (pais == 'Brasil') {
-                res.innerHTML += `Brasileiro!`
+            res.innerHTML = `Vivendo em ${origem} voce é: `
+
+            if (origem == 'Brasil') {
+                res.innerHTML += `<strong>Brasileiro!</strong>`
             } else {
-                res.innerHTML += `estrangeiro!`
+                res.innerHTML += `<strong>estrangeiro!</strong>`
             }
             
             
