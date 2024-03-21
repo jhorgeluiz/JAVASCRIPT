@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(66, 69, 241);
+    font: normal 15pt arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
+}
+
+div {
+    text-align: center;
+    padding: 8px;
+}
+
+input {
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid;
+    background-color:bisque;
+    font-weight: bolder;
+    height: 30px;
+}
+
+.butao {
+    font-weight: bolder;
+    border-radius: 10%;
+    height: 40px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
